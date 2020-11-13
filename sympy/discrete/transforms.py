@@ -71,6 +71,9 @@ def fft(seq, dps=None):
     r"""
     Performs the Discrete Fourier Transform (**DFT**) in the complex domain.
 
+    Explanation
+    ===========
+
     The sequence is automatically padded to the right with zeros, as the
     *radix-2 FFT* requires the number of sample points to be a power of 2.
 
@@ -192,6 +195,9 @@ def ntt(seq, prime):
     Discrete Fourier Transform (**DFT**) over quotient ring `Z/pZ` for prime
     `p` instead of complex numbers `C`.
 
+    Explanation
+    ===========
+
     The sequence is automatically padded to the right with zeros, as the
     *radix-2 NTT* requires the number of sample points to be a power of 2.
 
@@ -276,6 +282,9 @@ def fwht(seq):
     r"""
     Performs the Walsh Hadamard Transform (**WHT**), and uses Hadamard
     ordering for the sequence.
+
+    Explanation
+    ===========
 
     The sequence is automatically padded to the right with zeros, as the
     *radix-2 FWHT* requires the number of sample points to be a power of 2.
@@ -365,6 +374,9 @@ def mobius_transform(seq, subset=True):
     r"""
     Performs the Mobius Transform for subset lattice with indices of
     sequence as bitmasks.
+
+    Explanation
+    ===========
 
     The indices of each argument, considered as bit strings, correspond
     to subsets of a finite set.
