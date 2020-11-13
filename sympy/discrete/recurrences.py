@@ -119,6 +119,9 @@ def linrec_coeffs(c, n):
     Compute the coefficients of n'th term in linear recursion
     sequence defined by c.
 
+    Explanation
+    ===========
+
     `x^k = c_0 x^{k-1} + c_1 x^{k-2} + \cdots + c_{k-1}`.
 
     It computes the coefficients by using binary exponentiation.
