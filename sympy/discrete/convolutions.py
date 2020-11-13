@@ -16,6 +16,9 @@ def convolution(a, b, cycle=0, dps=None, prime=None, dyadic=None, subset=None):
     Performs convolution by determining the type of desired
     convolution using hints.
 
+    Explanation
+    ===========
+
     Exactly one of ``dps``, ``prime``, ``dyadic``, ``subset`` arguments
     should be specified explicitly for identifying the type of convolution,
     and the argument ``cycle`` can be specified optionally.
@@ -215,6 +218,9 @@ def convolution_fwht(a, b):
     Performs dyadic (*bitwise-XOR*) convolution using Fast Walsh Hadamard
     Transform.
 
+    Explanation
+    ===========
+
     The convolution is automatically padded to the right with zeros, as the
     *radix-2 FWHT* requires the number of sample points to be a power of 2.
 
@@ -279,6 +285,9 @@ def convolution_fwht(a, b):
 def convolution_subset(a, b):
     """
     Performs Subset Convolution of given sequences.
+
+    Explanation
+    ===========
 
     The indices of each argument, considered as bit strings, correspond to
     subsets of a finite set.
@@ -357,6 +366,9 @@ def covering_product(a, b):
     """
     Returns the covering product of given sequences.
 
+    Explanation
+    ===========
+
     The indices of each argument, considered as bit strings, correspond to
     subsets of a finite set.
 
@@ -426,6 +438,9 @@ def covering_product(a, b):
 def intersecting_product(a, b):
     """
     Returns the intersecting product of given sequences.
+
+    Explanation
+    ===========
 
     The indices of each argument, considered as bit strings, correspond to
     subsets of a finite set.
